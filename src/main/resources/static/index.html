@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Hospital Smart App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🏥 Hospital Smart App</h1>
+
+<div class="section">
+  <h2>👨‍⚕️ Docteurs</h2>
+  <table id="doctors"></table>
+  <input id="doctor-name" placeholder="Nom">
+  <input id="doctor-spec" placeholder="Spécialité">
+  <button onclick="addDoctor()">Ajouter</button>
+</div>
+
+<div class="section">
+  <h2>🧑 Patients</h2>
+  <table id="patients"></table>
+  <input id="patient-name" placeholder="Nom">
+  <input id="patient-age" type="number" placeholder="Âge">
+  <select id="patient-gender">
+    <option value="Homme">Homme</option>
+    <option value="Femme">Femme</option>
+  </select>
+  <button onclick="addPatient()">Ajouter</button>
+</div>
+
+<div class="section">
+  <h2>📅 Rendez-vous</h2>
+  <table id="appointments"></table>
+  <label>Patient:</label><select id="app-patient"></select>
+  <label>Docteur:</label><select id="app-doctor"></select>
+  <input id="app-date" type="date">
+  <textarea id="app-symptoms" placeholder="Symptômes..."></textarea>
+  <button onclick="addAppointment()">Analyser et créer</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
